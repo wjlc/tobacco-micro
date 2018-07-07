@@ -1,0 +1,19 @@
+entity Industry {
+	name String,
+    manufacturer String,
+    date ZonedDateTime,
+    desc String,
+    qrcode String
+}
+
+entity Commerce {
+	companyname String
+	retailname String
+}
+
+relationship ManyToOne {
+  Commerce{industry} to Industry
+}
+
+// Set pagination options
+paginate Industry with pagination

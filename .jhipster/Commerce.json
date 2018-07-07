@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "industry",
+            "otherEntityName": "industry",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "companyname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "retailname",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180620034204",
+    "entityTableName": "commerce",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "tobacco"
+}
